@@ -1,0 +1,22 @@
+
+
+
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  application:
+    name: pay-now-premium-collection
+  datasource:
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/premium_collection?autoReconnect=true
+    username: postgres
+    password: postgres
+
+dbs:
+  key:
+    pwd: test
+    pub: test
+
+sl:
+  key:
+    pri: test
