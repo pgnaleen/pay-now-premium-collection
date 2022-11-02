@@ -14,7 +14,7 @@ spring:
 
 dbs:
   key:
-    pwd: test
+    pwd: 12345
     pub: test
 
 sl:
