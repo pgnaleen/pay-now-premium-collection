@@ -163,7 +163,7 @@ public class CipherImpl implements Cipher {
     }
 
     @Override
-    public String enryptData(
+    public String encryptData(
             final String data
     ) throws IOException, PGPException, IllegalArgumentException, NoSuchProviderException {
         return encrypt(data);
