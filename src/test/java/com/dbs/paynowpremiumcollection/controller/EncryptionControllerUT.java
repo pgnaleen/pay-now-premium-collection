@@ -22,10 +22,9 @@ public class EncryptionControllerUT {
 
     @Test
     public void getEncrypted_methodTest() throws PGPException, IOException, NoSuchProviderException {
-//        when(encryptionService.encryptFile());
         EncryptionController controller = new EncryptionController(encryptionService);
         EncryptionRequestDto requestDto = new EncryptionRequestDto();
-        String response = controller.getEncrypted(requestDto);
+        String response = controller.getEncryptedFile(requestDto);
 
         assertNotNull(response);
         assertEquals("{\"response\":\"200\"}", response);
@@ -35,7 +34,7 @@ public class EncryptionControllerUT {
     public void getDecrypted_methodTest() throws PGPException, IOException, NoSuchProviderException {
         EncryptionController controller = new EncryptionController(encryptionService);
         EncryptionRequestDto requestDto = new EncryptionRequestDto();
-        String response = controller.getEncrypted(requestDto);
+        String response = controller.getEncryptedFile(requestDto);
 
         assertNotNull(response);
         assertEquals("{\"response\":\"200\"}", response);

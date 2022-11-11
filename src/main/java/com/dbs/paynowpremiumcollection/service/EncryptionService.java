@@ -7,11 +7,12 @@ import java.io.IOException;
 import java.security.NoSuchProviderException;
 
 public interface EncryptionService {
-    void encryptFile(EncryptionRequestDto requestDto) throws PGPException, IOException, NoSuchProviderException;
+
     String encrypt(String requestDto) throws PGPException, IOException, NoSuchProviderException;
 
-
-    void decryptFile() throws PGPException, IOException, NoSuchProviderException;
+    void encryptFile(EncryptionRequestDto requestDto) throws PGPException, IOException, NoSuchProviderException;
 
     String decrypt(String requestDto) throws PGPException, IOException, NoSuchProviderException;
+
+    void decryptFile() throws PGPException, IOException, NoSuchProviderException;
 }
